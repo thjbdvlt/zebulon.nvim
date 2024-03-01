@@ -3,8 +3,8 @@ zebulon
 
 neovim colorscheme with very limited palette.
 
-![day](./img/day_python.png)
-![night](./img/night_python.png)
+![day](./img/screenshot_python_day.png)
+![night](./img/screenshot_python_night.png)
 
 colors
 ------
