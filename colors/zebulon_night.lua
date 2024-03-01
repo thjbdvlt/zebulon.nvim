@@ -1,45 +1,46 @@
 vim.cmd("hi clear")
-vim.background = "light"
+vim.background = "dark"
 vim.termguicolors = false
-vim.g.colors_name = 'zebulon'
+vim.g.colors_name = 'zebulon_night'
 
 local hi = vim.api.nvim_set_hl
 
 local base = {
 
-    -- syntax
-    { "Normal",      { ctermfg = 16,
-                       ctermbg = 231 }} ,
-    { "Function",    { ctermfg = 19  }},
-    { "Statement",   { ctermfg = 178 }},
-    { "Operator",    { ctermfg = 160 }},
-    { "String",      { ctermfg = 28  }},
-    { "Constant",    { ctermfg = 30  }},
-    { "Type",        { ctermfg = 163 }},
-    { "Special",     { ctermfg = 200 }},
-    { "Punctuation", { ctermfg = 89  }},
-    { "Title",       { ctermfg = 163,
-                         bold = true }},
-    { "Comment",     { ctermfg = 145,
-                       italic = true }},
+ -- syntax
+ { "Normal",       { ctermfg = 231,
+                     ctermbg = 16  }},
+ { "Function",     { ctermfg = 81  }},
+ { "Comment",      { ctermfg = 243,
+                     italic = true }},
+ { "Statement",    { ctermfg = 220 }},
+ { "Operator",     { ctermfg = 196 }},
+ { "String",       { ctermfg = 113 }},
+ { "Constant",     { ctermfg = 85  }},
+ { "Type",         { ctermfg = 207 }},
+ { "Special",      { ctermfg = 170 }},
+ { "Title",        { ctermfg = 160,
+                       bold = true }},
+ { "Punctuation",  { ctermfg = 126 }},
 
-    -- interface
-    { "Visual",       { ctermbg = 255 }},
-    { "Pmenu",        { ctermfg = 16,
-                        ctermbg = 255 }},
-    { "Cursor",       { ctermbg = 212,
-                        ctermfg = 214 }},
-    { "CursorLine",   {               }},
-    { "CursorLineNr", { ctermfg = 178 }},
-    { "MatchParen",   { ctermbg = 207,
-                        ctermfg = 231 }},
-    { "Error",        { ctermbg = 160,
-                        ctermfg = 231 }},
-    { "TabLineFill",  { ctermfg = 255 }},
-    { "LineNr",       { ctermfg = 254,
-                        ctermbg = 231 }},
-    { "SignColumn",   { ctermbg = 231,
-                        ctermfg = 145 }},
+ -- interface
+ { "Visual",       { ctermbg = 235 }},
+ { "Pmenu",        { ctermfg = 145,
+                     ctermbg = 234 }},
+ { "Cursor",       { ctermbg = 160,
+                     ctermfg = 231 }},
+ { "CursorLine",   {               }},
+ { "CursorLineNr", { ctermfg = 149 }},
+ { "MatchParen",   { ctermbg = 221,
+                     ctermfg = 16  }},
+ { "Error",        { ctermbg = 160,
+                     ctermfg = 231 }},
+ { "TabLineFill",  { ctermfg = 255 }},
+ { "LineNr",       { ctermfg = 240,
+                     ctermbg = 16  }},
+ { "SignColumn",   { ctermbg = 16,
+                     ctermfg = 145 }},
+
 }
 
 for i=1, #base do
