@@ -1,0 +1,4 @@
+zebulon
+-------
+
+colorscheme for neovim
