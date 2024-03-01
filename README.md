@@ -3,8 +3,8 @@ zebulon
 
 neovim colorscheme with very limited palette.
 
-![day](./img/day.png)
-![night](./img/night.png)
+![day](./img/zebulon_day_python.png)
+![night](./img/zebulon_night_python.png)
 
 colors
 ------
@@ -20,7 +20,8 @@ String     = green
 Constant   = turquoise
 Type       = magenta
 Special    = pink
-Comment    = grey (italic)
+
+Comment    = italic_grey
 ```
 
 interface colors are even simplier: everything in greys, except cursor (yellow) and parentheses matching (pink).
