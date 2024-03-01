@@ -9,7 +9,7 @@ neovim colorscheme with very limited palette.
 colors
 ------
 
-9 colors for 9 syntax highlighting groups (every thing else are linked to these groups):
+9 colors for 9 syntax highlighting groups (all other syntax groups are linked to these ones):
 
 ```lua
 Identifier = black
