@@ -1,7 +1,7 @@
 zebulon
 =======
 
-neovim colorscheme with very limited palette.
+[neovim](https://github.com/neovim/neovim) colorscheme with very limited palette.
 
 ![day](./img/screenshot_day.png)
 ![night](./img/screenshot_night.png)
