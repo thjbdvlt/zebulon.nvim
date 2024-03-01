@@ -69,7 +69,7 @@ local M = {
     {"@type.builtin", { link = "Type" }},
 
     {"Special", { ctermfg = 200 }},
-    {"Title", { link = "Special" }},
+    {"Title", { ctermfg = 163, bold = true }},
 
     {"Punctuation", { ctermfg = 89 }},
     {"@punctuation", { link = "Punctuation" }},
