@@ -19,7 +19,7 @@ local base = {
  { "Constant",     { ctermfg = 85  }},
  { "Type",         { ctermfg = 207 }},
  { "Special",      { ctermfg = 170 }},
- { "Title",        { ctermfg = 160,
+ { "Title",        { ctermfg = 163,
                        bold = true }},
  { "Punctuation",  { ctermfg = 126 }},
 

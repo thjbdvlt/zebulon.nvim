@@ -31,8 +31,8 @@ local base = {
                         ctermfg = 214 }},
     { "CursorLine",   {               }},
     { "CursorLineNr", { ctermfg = 178 }},
-    { "MatchParen",   { ctermbg = 207,
-                        ctermfg = 231 }},
+    { "MatchParen",   { ctermbg = 153,
+                        ctermfg = 016 }},
     { "Error",        { ctermbg = 160,
                         ctermfg = 231 }},
     { "TabLineFill",  { ctermfg = 255 }},
@@ -40,7 +40,12 @@ local base = {
                         ctermbg = 231 }},
     { "SignColumn",   { ctermbg = 231,
                         ctermfg = 145 }},
+
+    -- plugin
+    {'LeapLabelPrimary', { ctermbg = 220, ctermfg = 016 }}
 }
+
+
 
 for i=1, #base do
     local y = base[i]
@@ -119,6 +124,9 @@ local links = {
         "LspReferenceRead",
         "LspReferenceWrite",
     },
+
+    -- plugin
+    MatchParen = {'LeapLabelSecondary'},
 }
 
 for group, subgroups in pairs(links) do
