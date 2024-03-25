@@ -61,6 +61,7 @@ local links = {
         "@parameter",
         "@field",
         "Folded",
+        "NormalFloat"
     },
     Function = {
         "@function",
@@ -106,7 +107,6 @@ local links = {
         "StatusLineNC",
         "TabLine",
         "VertSplit",
-        "NormalFloat",
         "DiagnosticFloatingHint",
         "DiagnosticVirtualTextHint",
         "DiagnosticSignHint",

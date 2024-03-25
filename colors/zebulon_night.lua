@@ -31,7 +31,7 @@ local base = {
                      ctermfg = 231 }},
  { "CursorLine",   {               }},
  { "CursorLineNr", { ctermfg = 220 }},
- { "MatchParen",   { ctermbg = 221,
+ { "MatchParen",   { ctermbg = 205,
                      ctermfg = 16  }},
  { "Error",        { ctermbg = 160,
                      ctermfg = 231 }},
