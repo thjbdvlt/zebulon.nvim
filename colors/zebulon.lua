@@ -60,7 +60,6 @@ local links = {
         "@variable",
         "@parameter",
         "@field",
-        "Folded",
         "NormalFloat"
     },
     Function = {
@@ -110,6 +109,7 @@ local links = {
         "DiagnosticFloatingHint",
         "DiagnosticVirtualTextHint",
         "DiagnosticSignHint",
+        "Folded",
     },
     Pmenu = {
         "ModeMsg",

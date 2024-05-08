@@ -61,7 +61,6 @@ local base = {
             "@variable",
             "@parameter",
             "@field",
-            "Folded",
         },
         Function = {
             "@function",
@@ -111,6 +110,7 @@ local base = {
             "DiagnosticFloatingHint",
             "DiagnosticVirtualTextHint",
             "DiagnosticSignHint",
+            "Folded",
         },
         Pmenu = {
             "ModeMsg",
