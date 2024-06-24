@@ -41,6 +41,8 @@ local base = {
     {'ItalicString', { ctermfg = 28, italic = true }},
     {'ItalicParenthese', { ctermfg = 19, italic = true }},
     {'ItalicBold', { italic = true, bold = true }},
+    {'BoldString', { ctermfg = 28, bold = true }},
+    {'BoldParenthese', { ctermfg = 19, bold = true }},
 }
 
 
