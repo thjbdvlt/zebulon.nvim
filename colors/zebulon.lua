@@ -1,4 +1,3 @@
-vim.cmd("hi clear")
 vim.background = "light"
 vim.termguicolors = false
 vim.g.colors_name = 'zebulon'
@@ -8,43 +7,41 @@ local hi = vim.api.nvim_set_hl
 local base = {
 
     -- syntax
-    { "Normal",      { ctermfg = 16,
-                       ctermbg = 231 }} ,
-    { "Function",    { ctermfg = 19  }},
-    { "Statement",   { ctermfg = 178 }},
-    { "Operator",    { ctermfg = 160 }},
-    { "String",      { ctermfg = 28  }},
+    { "Comment",     { ctermfg = 145, italic = true }},
     { "Constant",    { ctermfg = 30  }},
-    { "Type",        { ctermfg = 163 }},
-    { "Special",     { ctermfg = 200 }},
+    { "Function",    { ctermfg = 19  }},
+    { "Normal",      { ctermfg = 16, ctermbg = 231 }} ,
+    { "Operator",    { ctermfg = 160 }},
     { "Punctuation", { ctermfg = 89  }},
-    { "Title",       { ctermfg = 163,
-                         bold = true }},
-    { "Comment",     { ctermfg = 145,
-                       italic = true }},
+    { "Special",     { ctermfg = 200 }},
+    { "Statement",   { ctermfg = 178 }},
+    { "String",      { ctermfg = 28  }},
+    { "Title",       { ctermfg = 163, bold = true }},
+    { "Type",        { ctermfg = 163 }},
+    { "Underlined",  { ctermfg = 32, underline = true }},
 
     -- interface
-    { "Visual",       { ctermbg = 255 }},
-    { "Pmenu",        { ctermfg = 16,
-                        ctermbg = 255 }},
-    { "Cursor",       { ctermbg = 212,
-                        ctermfg = 214 }},
+    { "Cursor",       { ctermbg = 212, ctermfg = 214 }},
     { "CursorLine",   {               }},
     { "CursorLineNr", { ctermfg = 178 }},
-    { "MatchParen",   { ctermbg = 153,
-                        ctermfg = 016 }},
-    { "Error",        { ctermbg = 160,
-                        ctermfg = 231 }},
+    { "Error",        { ctermbg = 224, ctermfg = nil }},
+    { "LineNr",       { ctermfg = 254, ctermbg = 231 }},
+    { "MatchParen",   { ctermbg = 153, ctermfg = 016 }},
+    { "Pmenu",        { ctermfg = 16, ctermbg = 255 }},
+    { "SignColumn",   { ctermbg = 231, ctermfg = 145 }},
     { "TabLineFill",  { ctermfg = 255 }},
-    { "LineNr",       { ctermfg = 254,
-                        ctermbg = 231 }},
-    { "SignColumn",   { ctermbg = 231,
-                        ctermfg = 145 }},
+    { "Visual",       { ctermbg = 255 }},
 
-    -- plugin
-    {'LeapLabelPrimary', { ctermbg = 220, ctermfg = 016 }}
+    -- plugins
+    -- leap
+    {'LeapLabelPrimary', { ctermbg = 220, ctermfg = 016 }},
+    -- markdown polyphony
+    {'Bold', { bold = true }},
+    {'Italic', { italic = true}},
+    {'ItalicString', { ctermfg = 28, italic = true }},
+    {'ItalicParenthese', { ctermfg = 19, italic = true }},
+    {'ItalicBold', { italic = true, bold = true }},
 }
-
 
 
 for i=1, #base do
@@ -60,7 +57,14 @@ local links = {
         "@variable",
         "@parameter",
         "@field",
-        "NormalFloat"
+        "NormalFloat",
+        -- git gutter
+        "GitGutterAdd",
+        "GitGutterChange",
+        "GitGutterDelete",
+        "GitGutterChangeDelete",
+        "diffAdd",
+        "diffChanged",
     },
     Function = {
         "@function",
@@ -118,6 +122,7 @@ local links = {
     },
     Error = {
         "DiagnosticError",
+        "SpellBad",
     },
     Visual = {
         "LspReferenceText",
