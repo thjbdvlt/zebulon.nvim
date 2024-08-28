@@ -73,7 +73,7 @@ local base = {
 
     -- plugins
     -- leap
-    {'LeapLabelPrimary', { ctermbg = _gold1, bg=_gold1, ctermfg = _grey0, fg=grey0 }},
+    {'LeapLabelPrimary', { ctermbg = _gold1, bg=gold1, ctermfg = _grey0, fg=grey0 }},
     -- markdown polyphony
     {'Bold', { bold = true }},
     {'Italic', { italic = true}},
