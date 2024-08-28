@@ -34,7 +34,7 @@ local base = {
 
     -- plugins
     -- leap
-    {'LeapLabelPrimary', { ctermbg = 220, ctermfg = 016 }},
+    {'LeapLabel', { ctermbg = 220, ctermfg = 016 }},
     -- markdown polyphony
     {'Bold', { bold = true }},
     {'Italic', { italic = true}},
@@ -133,7 +133,7 @@ local links = {
     },
 
     -- plugin
-    MatchParen = {'LeapLabelSecondary'},
+    MatchParen = {'LeapLabel'},
 }
 
 for group, subgroups in pairs(links) do

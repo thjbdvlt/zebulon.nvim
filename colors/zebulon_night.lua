@@ -33,7 +33,7 @@ local base = {
     { "Visual",       { ctermbg = 235 }},
 
     -- plugin
-    {'LeapLabelPrimary', { ctermbg = 220, ctermfg = 30 }},
+    {'LeapLabel', { ctermbg = 220, ctermfg = 30 }},
 }
 
 for i=1, #base do
