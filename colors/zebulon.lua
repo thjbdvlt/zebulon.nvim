@@ -63,7 +63,6 @@ local base = {
     { "Cursor",       { ctermbg = _orchid2, bg=orchid2, ctermfg = _orange1, fg=orange1 }},
     { "CursorLine",   {               }},
     { "CursorColumn", {               }},
-    { "EndOfBuffer",  {               }},
     { "CursorLineNr", { ctermfg = _gold3, fg=gold3 }},
     { "Error",        { ctermbg = _mistyrose1, bg=mistyrose1, ctermfg = nil }},
     { "LineNr",       { ctermfg = _grey93, fg=grey_a, ctermbg = _grey100, bg=grey100 }},
@@ -145,6 +144,7 @@ local links = {
     LineNr = {
         "NonText",
         "WinSeparator",
+        "EndOfBuffer"
     },
     CursorLineNr = {
         "CursorLineSign",

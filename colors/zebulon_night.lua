@@ -46,16 +46,16 @@ local _mediumvioletred = 126
 local mediumvioletred  = "#af0087"
 local _grey35          = 240
 local grey35           = "#585858"
+local green4           = "#008700"
+local _green4          = 28
+local blue3            = "#0000af"
+local _blue3           = 19
 
 -- local _mistyrose1      = 224
 -- local mistyrose1       = "#ffd7d7"
 -- local gold3            = "#d7af00"
 -- local deeppink         = "#87005f"
 -- local _deeppink        = 89
--- local green4           = "#008700"
--- local _green4          = 28
--- local blue3            = "#0000af"
--- local _blue3           = 19
 -- local _gold3           = 178
 -- local _magenta2        = 200
 -- local magenta2         = "#ff00d7"
@@ -67,6 +67,7 @@ local grey35           = "#585858"
 -- local orchid2          = "#ff87d7"
 -- local _orange1         = 214
 -- local orange1          = "#ffaf00"
+--
 --
 local base = {
 
@@ -168,6 +169,7 @@ local links = {
     LineNr = {
         "NonText",
         "WinSeparator",
+        "EndOfBuffer"
     },
     CursorLineNr = {
         "CursorLineSign",
