@@ -41,6 +41,8 @@ local mistyrose1     = "#ffd7d7"
 local _grey93        = 255
 local grey93         = "#eeeeee"
 
+local grey_a         = "#dedede"
+
 local base = {
 
     -- syntax
@@ -64,12 +66,12 @@ local base = {
     { "EndOfBuffer",  {               }},
     { "CursorLineNr", { ctermfg = _gold3, fg=gold3 }},
     { "Error",        { ctermbg = _mistyrose1, bg=mistyrose1, ctermfg = nil }},
-    { "LineNr",       { ctermfg = _grey93, ctermbg = _grey100, bg=grey100 }},
+    { "LineNr",       { ctermfg = _grey93, fg=grey_a, ctermbg = _grey100, bg=grey100 }},
     { "MatchParen",   { ctermbg = _lightskyblue3, bg=lightskyblue3, ctermfg = _grey0, fg=grey0 }},
     { "Pmenu",        { ctermfg = _grey0, fg=grey0, ctermbg = _grey93, bg=grey93 }},
     { "SignColumn",   { ctermbg = _grey100, bg=grey100, ctermfg = _grey69, fg=grey69 }},
     { "TabLineFill",  { ctermfg = _grey93, fg=grey93 }},
-    { "Visual",       { ctermbg = _grey100, bg = grey100 }},
+    { "Visual",       { ctermbg = _grey93, bg = grey93 }},
 
     -- plugins
     -- leap
