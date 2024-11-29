@@ -78,7 +78,7 @@ local base = {
 
     -- markdown polyphony
     {'Bold', { bold = true }},
-    {'Italic', { italic = true}},
+    {'Italic', { italic = true }},
     {'ItalicString', { ctermfg = _green4, fg=green4, italic = true }},
     {'ItalicParenthese', { ctermfg = _blue3, fg=blue3, italic = true }},
     {'ItalicBold', { italic = true, bold = true }},
@@ -114,8 +114,6 @@ local links = {
         "@function.builtin",
         "@function.call",
         "@method",
-        "markdownCode",
-        "markdownCodeBlock",
     },
     Statement = {
         "Include",
@@ -125,8 +123,8 @@ local links = {
         "@operator"
     },
     Constant = {
-        "@constant",
         "Boolean",
+        "@constant",
         "@number",
         "@character",
         "@constant.builtin",

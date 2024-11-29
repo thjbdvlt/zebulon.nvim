@@ -102,14 +102,11 @@ local base = {
     -- plugin
     {'LeapLabel', { ctermbg = _gold1, bg = gold1, ctermfg = _turquoise4, fg = turquoise4 }},
 
-    -- markdown polyphony
-    {'Bold', { bold = true }},
-    {'Italic', { italic = true}},
-    {'ItalicString', { ctermfg = _green4, fg=green4, italic = true }},
-    {'ItalicParenthese', { ctermfg = _blue3, fg=blue3, italic = true }},
-    {'ItalicBold', { italic = true, bold = true }},
-    {'BoldString', { ctermfg = _green4, fg=green4, bold = true }},
-    {'BoldParenthese', { ctermfg = _blue3, fg=blue3, bold = true }},
+    -- diff
+    { 'DiffAdd', {bg = "#448822" } },
+    { 'DiffChange', {bg = "#882244"} },
+    { 'DiffDelete', {bg = "#226688" } },
+
 }
 
 for i=1, #base do
@@ -131,8 +128,6 @@ local links = {
         "GitGutterChange",
         "GitGutterDelete",
         "GitGutterChangeDelete",
-        "diffAdd",
-        "diffChanged",
     },
     Function = {
         "@function",
