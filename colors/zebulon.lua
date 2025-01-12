@@ -72,6 +72,9 @@ local base = {
     { "TabLineFill",  { ctermfg = _grey93, fg=grey93 }},
     { "Visual",       { ctermbg = _grey93, bg = grey93 }},
 
+    { "DiagnosticUnderlineError", { underline = false, undercurl = true, special = red3}},
+    { "DiagnosticUnderlineWarn", { underline = false, undercurl = true, special = gold1}},
+
     -- plugins
     -- leap
     {'LeapLabel', { ctermbg = _gold1, bg=gold1, ctermfg = _grey0, fg=grey0 }},

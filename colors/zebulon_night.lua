@@ -46,11 +46,11 @@ local _mediumvioletred = 126
 local mediumvioletred  = "#af0087"
 local _grey35          = 240
 local grey35           = "#585858"
-local green4           = "#008700"
-local _green4          = 28
-local blue3            = "#0000af"
-local _blue3           = 19
 
+-- local green4           = "#008700"
+-- local _green4          = 28
+-- local blue3            = "#0000af"
+-- local _blue3           = 19
 -- local _mistyrose1      = 224
 -- local mistyrose1       = "#ffd7d7"
 -- local gold3            = "#d7af00"
@@ -98,6 +98,9 @@ local base = {
     { "SignColumn",   { ctermbg = _grey0, bg = grey0, ctermfg = _grey69, fg = grey69 }},
     { "TabLineFill",  { ctermfg = _grey93, fg = grey93 }},
     { "Visual",       { ctermbg = _grey15, bg = grey15 }},
+
+    { "DiagnosticUnderlineError", { underline = false, undercurl = true, special = red1}},
+    { "DiagnosticUnderlineWarn", { underline = false, undercurl = true, special = gold1}},
 
     -- plugin
     {'LeapLabel', { ctermbg = _gold1, bg = gold1, ctermfg = _turquoise4, fg = turquoise4 }},
